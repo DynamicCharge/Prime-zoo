@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="only light">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Prime - Каталог</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"> -->
+    <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+<script defer="defer" src="./assets/scripts/main.js"></script><link href="./assets/styles/main..css" rel="stylesheet"></head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="#" class="logo"><img src="assets/img/logo..svg" alt=""></a>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item"><a href="#">О бренде</a></li>
+                            <li class="header__item"><a href="#">Каталог</a></li>
+                            <li class="header__item"><a href="#">Где купить</a></li>
+                            <li class="header__item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__burger-wrapper">
+                        <a href="#" class="header__burger">
+                            <span class="header__burger-item"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="section breadcrumbs">
+                <div class="container">
+                    <div class="breadcrumbs__wrapper">
+                        <a href="#" class="breadcrumbs__item">Главная страница</a>
+                        <a href="#" class="breadcrumbs__item">Каталог</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section catalog">
+                <div class="container">
+                    <div class="catalog__wrapper">
+                        <h1 class="catalog__header section-header">Каталог </h1>
+                        <div class="catalog__inner">
+                            <div class="catalog__filters">
+                                <form class="catalog__form">
+                                    <div class="catalog__form-wrap">
+                                        <select name="animal-type" id="animalType" class="catalog__form-select" aria-placeholder="Вид питомца">
+                                            <option value="Собака">Собака</option>
+                                            <option value="Кошка">Кошка</option>
+                                        </select>
+                                    </div>
+                                    <div class="catalog__form-wrap">
+                                        <select name="animal-age" id="animalAge" class="catalog__form-select" aria-placeholder="Возраст">
+                                            <option value="Малыши (2-12 мес)">Малыши (2-12 мес)</option>
+                                            <option value="Взрослые (1+)">Взрослые (1+)</option>
+                                        </select>
+                                    </div>
+                                    <div class="catalog__form-wrap">
+                                        <select name="food-type" id="foodType" class="catalog__form-select" aria-placeholder="Тип корма">
+                                            <option value="Сухой">Сухой</option>
+                                            <option value="Влажный">Влажный</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <ul class="catalog__list">
+                                <li class="catalog__item _yellow">
+                                    <div class="catalog__item__img-box"><img src="assets/img/catalog-item-1..png" alt=""></div>
+                                    <div class="catalog__item-wrap">
+                                        <span class="catalog__item__name section-subhead">Prime Adult</span>
+                                        <p class="catalog__item__desc section-text">
+                                            Полнорационный сухой корм для взрослых кошек всех пород
+
+                                            <span class="big">с курицей</span>
+                                        </p>
+                                        <ul class="catalog__item__list">
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#stomach"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#provitamin"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#balance"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#shnyaga"></use></svg>
+                                            </li>
+                                        </ul>
+                                        <span class="catalog__item__info section-desc">Вес: 500 гр, 2 кг</span>
+                                        <a href="#" class="catalog__item__link section-btn">Подробнее</a>
+                                    </div>
+                                </li>
+                                <li class="catalog__item _pink">
+                                    <div class="catalog__item__img-box"><img src="assets/img/catalog-item-2..png" alt=""></div>
+                                    <div class="catalog__item-wrap">
+                                        <span class="catalog__item__name section-subhead">Prime Adult</span>
+                                        <p class="catalog__item__desc section-text">
+                                            Полнорационный сухой корм для взрослых кошек всех пород
+
+                                            <span class="big">с лососем</span>
+                                        </p>
+                                        <ul class="catalog__item__list">
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#vegetables"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#shnyaga"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#zink"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#hair"></use></svg>
+                                            </li>
+                                        </ul>
+                                        <span class="catalog__item__info section-desc">Вес: 500 гр, 2 кг</span>
+                                        <a href="#" class="catalog__item__link section-btn">Подробнее</a>
+                                    </div>
+                                </li>
+                                <li class="catalog__item _purple">
+                                    <div class="catalog__item__img-box"><img src="assets/img/catalog-item-3..png" alt=""></div>
+                                    <div class="catalog__item-wrap">
+                                        <span class="catalog__item__name section-subhead">Prime Adult</span>
+                                        <p class="catalog__item__desc section-text">
+                                            Полнорационный сухой корм для взрослых кошек всех пород
+
+                                            <span class="big">с курицей</span>
+                                        </p>
+                                        <ul class="catalog__item__list">
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#ssat"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#weight"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#vegetables"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#berries"></use></svg>
+                                            </li>
+                                        </ul>
+                                        <span class="catalog__item__info section-desc">Вес: 500 гр, 2 кг</span>
+                                        <a href="#" class="catalog__item__link section-btn">Подробнее</a>
+                                    </div>
+                                </li>
+                                <li class="catalog__item _yellow">
+                                    <div class="catalog__item__img-box"><img src="assets/img/catalog-item-4..png" alt=""></div>
+                                    <div class="catalog__item-wrap">
+                                        <span class="catalog__item__name section-subhead">Prime Adult</span>
+                                        <p class="catalog__item__desc section-text">
+                                            Полнорационный сухой корм для взрослых кошек всех пород
+
+                                            <span class="big">с курицей</span>
+                                        </p>
+                                        <ul class="catalog__item__list">
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#grow"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#provitamin"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#hair"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#shnyaga"></use></svg>
+                                            </li>
+                                        </ul>
+                                        <span class="catalog__item__info section-desc">Вес: 500 гр, 2 кг</span>
+                                        <a href="#" class="catalog__item__link section-btn">Подробнее</a>
+                                    </div>
+                                </li>
+                                <li class="catalog__item _yellow">
+                                    <div class="catalog__item__img-box"><img src="assets/img/catalog-item-1..png" alt=""></div>
+                                    <div class="catalog__item-wrap">
+                                        <span class="catalog__item__name section-subhead">Prime Adult</span>
+                                        <p class="catalog__item__desc section-text">
+                                            Полнорационный сухой корм для взрослых кошек всех пород
+
+                                            <span class="big">с курицей</span>
+                                        </p>
+                                        <ul class="catalog__item__list">
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#stomach"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#provitamin"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#balance"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#shnyaga"></use></svg>
+                                            </li>
+                                        </ul>
+                                        <span class="catalog__item__info section-desc">Вес: 500 гр, 2 кг</span>
+                                        <a href="#" class="catalog__item__link section-btn">Подробнее</a>
+                                    </div>
+                                </li>
+                                <li class="catalog__item _pink">
+                                    <div class="catalog__item__img-box"><img src="assets/img/catalog-item-2..png" alt=""></div>
+                                    <div class="catalog__item-wrap">
+                                        <span class="catalog__item__name section-subhead">Prime Adult</span>
+                                        <p class="catalog__item__desc section-text">
+                                            Полнорационный сухой корм для взрослых кошек всех пород
+
+                                            <span class="big">с лососем</span>
+                                        </p>
+                                        <ul class="catalog__item__list">
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#vegetables"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#shnyaga"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#zink"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#hair"></use></svg>
+                                            </li>
+                                        </ul>
+                                        <span class="catalog__item__info section-desc">Вес: 500 гр, 2 кг</span>
+                                        <a href="#" class="catalog__item__link section-btn">Подробнее</a>
+                                    </div>
+                                </li>
+                                <li class="catalog__item _purple">
+                                    <div class="catalog__item__img-box"><img src="assets/img/catalog-item-3..png" alt=""></div>
+                                    <div class="catalog__item-wrap">
+                                        <span class="catalog__item__name section-subhead">Prime Adult</span>
+                                        <p class="catalog__item__desc section-text">
+                                            Полнорационный сухой корм для взрослых кошек всех пород
+
+                                            <span class="big">с курицей</span>
+                                        </p>
+                                        <ul class="catalog__item__list">
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#ssat"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#weight"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#vegetables"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#berries"></use></svg>
+                                            </li>
+                                        </ul>
+                                        <span class="catalog__item__info section-desc">Вес: 500 гр, 2 кг</span>
+                                        <a href="#" class="catalog__item__link section-btn">Подробнее</a>
+                                    </div>
+                                </li>
+                                <li class="catalog__item _yellow">
+                                    <div class="catalog__item__img-box"><img src="assets/img/catalog-item-4..png" alt=""></div>
+                                    <div class="catalog__item-wrap">
+                                        <span class="catalog__item__name section-subhead">Prime Adult</span>
+                                        <p class="catalog__item__desc section-text">
+                                            Полнорационный сухой корм для взрослых кошек всех пород
+
+                                            <span class="big">с курицей</span>
+                                        </p>
+                                        <ul class="catalog__item__list">
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#grow"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#provitamin"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#hair"></use></svg>
+                                            </li>
+                                            <li class="catalog__item__list__item">
+                                                <svg><use xlink:href="assets/img/sprite..svg#shnyaga"></use></svg>
+                                            </li>
+                                        </ul>
+                                        <span class="catalog__item__info section-desc">Вес: 500 гр, 2 кг</span>
+                                        <a href="#" class="catalog__item__link section-btn">Подробнее</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section epilog">
+                <div class="container">
+                    <div class="epilog__wrapper">
+                        <div class="epilog__container">
+                            <h2 class="epilog__header section-header">Prime — правильный выбор для вашего питомца</h2>
+                            <p>
+                                Prime — это правильный и первый выбор вашего питомца. В формулах Prime есть все необходимые ингредиенты для здорового и полноценного развития котят и щенков, сбалансированный состав для кошек и собак. Даже самый привередливый любимец не останется равнодушным! 
+                                <br><br>
+                                В ассортименте Prime широкий выбор полнорационных сухих и влажных кормов.
+                            </p>
+                            <a href="#" class="epilog__link section-btn">О бренде</a>
+                        </div>
+                        <img src="assets/img/epilog-hero..png" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__container">
+                        <a href="" class="logo"><img src="assets/img/logo..svg" alt=""></a>
+                        <nav class="footer__nav">
+                            <ul class="footer__list">
+                                <li class="footer__item"><a href="#">о бренде</a></li>
+                                <li class="footer__item"><a href="#">каталог</a></li>
+                                <li class="footer__item"><a href="#">где купить</a></li>
+                                <li class="footer__item"><a href="#">контакты</a></li>
+                            </ul>
+                            <div class="footer__socials">
+                                <a href="#vk"><img src="assets/img/vk..svg" alt=""></a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="footer__container">
+                        <span class="copy">© Иванко, 2022</span>
+                        <nav class="footer__nav">
+                            <ul class="footer__list">
+                                <li class="footer__item"><a href="#">Prime</a></li>
+                                <li class="footer__item"><a href="#">Prime Meat</a></li>
+                                <li class="footer__item"><a href="#">Prime Asia</a></li>
+                                <li class="footer__item"><a href="#">Prime Nature</a></li>
+                                <li class="footer__item"><a href="#">Prime WILD</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
