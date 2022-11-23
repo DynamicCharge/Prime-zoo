@@ -11455,6 +11455,16 @@ $(document).ready(function () {
             adaptiveHeight: true
         });
     }
+    if(window.innerWidth <= 730) {
+        $('.engr__age-list').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            appendDots: $('.engr__age__dots'),
+            arrows: false,
+            adaptiveHeight: true
+        });
+    }
 
     $('[data-burger]').on('click', function(){
         let $this = $(this),

@@ -1172,6 +1172,9 @@ table {
   background: #fff;
   color: #1F3773; }
 
+.catalog .catalog__paginator {
+  margin-top: 60px; }
+
 .catalog .catalog__header {
   margin-bottom: 40px; }
   .catalog .catalog__header._centered {
@@ -1421,7 +1424,8 @@ table {
 .card .card__plate {
   position: absolute;
   top: 0;
-  left: 50px; }
+  left: 50px;
+  max-height: 244px; }
 
 .card .card__hero {
   max-width: 70%;
@@ -1436,7 +1440,7 @@ table {
 
 .card .card__title {
   color: #1F3773;
-  margin-bottom: 20px; }
+  margin-bottom: 7px; }
 
 .card .card__desc {
   color: #1F3773;
@@ -1774,6 +1778,37 @@ table {
     height: 88px; } }
 
 @media screen and (max-width: 730px) {
+  .engr .engr__wrapper:last-of-type {
+    padding-bottom: 0 !important; }
+  .engr .engr__age-list {
+    display: block; }
+  ._content-inner-img._mob {
+    height: 180px; }
+  .engr .engr__list {
+    gap: 20px 18px;
+    justify-content: start; }
+  .engr .engr__wrapper {
+    padding: 40px 11px; }
+  .engr .engr__item img {
+    width: 55px;
+    height: 55px; }
+  .engr .engr__item {
+    max-width: 120px; }
+  .engr .engr__wrapper:nth-child(2) {
+    padding: 20px 0; }
+  .engr .engr__component-item {
+    height: 133px; }
+  .engr .engr__component-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px; }
+  .title .title__slide._content-page .title__slide-bg {
+    position: static; }
+  .title .title__slide._content-page {
+    justify-content: start;
+    flex-direction: column-reverse;
+    background: #B7D4F5; }
+  .title .title__slide._content-page .title__slide-wrap {
+    max-width: 100%; }
   .container {
     padding-left: 20px;
     padding-right: 20px; }
