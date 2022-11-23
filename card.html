@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="only light">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Prime - Карточка товара </title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"> -->
+    <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d7f796e6-b982-4f3a-9dae-e214d0513617&lang=ru_RU" type="text/javascript">
+    </script>
+<script defer="defer" src="./assets/scripts/main.js"></script><link href="./assets/styles/main..css" rel="stylesheet"></head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="#" class="logo"><img src="assets/img/logo..svg" alt=""></a>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item"><a href="#">О бренде</a></li>
+                            <li class="header__item"><a href="#">Каталог</a></li>
+                            <li class="header__item"><a href="#">Где купить</a></li>
+                            <li class="header__item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__burger-wrapper">
+                        <a href="#" class="header__burger">
+                            <span class="header__burger-item"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="section breadcrumbs">
+                <div class="container">
+                    <div class="breadcrumbs__wrapper">
+                        <a href="#" class="breadcrumbs__item">Главная страница</a>
+                        <a href="#" class="breadcrumbs__item">Каталог</a>
+                        <a href="#" class="breadcrumbs__item">Prime Puppy для взрослых щенков мелких пород</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section card">
+                <div class="container">
+                    <div class="card__wrapper">
+                        <div class="card__title _yellow">
+                            <div class="card__left">
+                                <img src="assets/img/card-plate..jpg" alt="" class="card__plate">
+                                <img src="assets/img/catalog-item-1..png" alt="" class="card__hero">
+                            </div>
+                            <div class="card__right">
+                                <span class="card__title section-text">Полнорационный сухой корм</span>
+                                <span class="card__desc section-desc">для взрослых щенков мелких пород</span>
+                                <span class="card__type section-header">с курицей</span>
+                                <p class="card__text section-text">
+                                    Специальная формула с курицей содержит оптимальное количество белков и жиров в составе, что обеспечивает рост и развитие вашего маленького любимца. Витамины и минералы поддержат иммунитет, а клетчатка и цикорий обеспечит здоровое пищеварение.                                     
+                                </p>
+                                <div class="card__energy section-desc">
+                                    <img src="assets/img/kkal..svg" alt="">
+                                    <span>
+                                        Энергетическая ценность: <br>
+                                        3 960 ккал/кг
+                                    </span>
+                                </div>
+                                <span class="card__desc section-desc">Упаковка: 500 г, 2 кг</span>
+                            </div>
+                        </div>
+                        <ul class="card__list _yellow">
+                            <li class="card__item">
+                                <img src="assets/img/card-list..svg" alt="">
+                                <div class="card__item-wrap">
+                                    <span class="card__item-name section-desc">Рост и развитие</span>
+                                    <p class="card__item-desc">Благодаря оптимальному содержанию белков и жиров в составе.</p>
+                                </div>
+                            </li>
+                            <li class="card__item">
+                                <img src="assets/img/card-list2..svg" alt="">
+                                <div class="card__item-wrap">
+                                    <span class="card__item-name section-desc">Витамины и минералы</span>
+                                    <p class="card__item-desc">Для поддержания здоровья и иммунитета.</p>
+                                </div>
+                            </li>
+                            <li class="card__item">
+                                <img src="assets/img/card-list3..svg" alt="">
+                                <div class="card__item-wrap">
+                                    <span class="card__item-name section-desc">Глюкозамин и хондроитин</span>
+                                    <p class="card__item-desc">Обеспечивает заботу о суставах и связках.</p>
+                                </div>
+                            </li>
+                            <li class="card__item">
+                                <img src="assets/img/card-list4..svg" alt="">
+                                <div class="card__item-wrap">
+                                    <span class="card__item-name section-desc">Здоровое пищеварение</span>
+                                    <p class="card__item-desc">Благодаря клетчатке и цикорию в составе.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card__table">
+                            <div class="card__table-box">
+                                <ul class="card__table-list">
+                                    <span class="card__table__header section-subhead">Состав</span>
+                                    <li class="card__table-item section-desc">
+                                        Курица (40%,  из которых 30% дегидрированный куринный белок и 10% свежее куриное мясо), белый рис, дегидрированный картофель, куриный жир 11%, гидролизованный куриный белок 5%, дегидрированная свекольная мякоть, семена льна, лигноцеллюлоза, минеральные вещества, сушеный цикорий, экстракст дрожжей, Юкка Шидигера, гидрохлорид глюкозамина 250 мг/кг, хондроитин сульфат 100 мг/кг, сушеная календула.                                        
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card__table-box">
+                                <ul class="card__table-list">
+                                    <span class="card__table__header section-subhead">Пищевые добавки (на кг)</span>
+                                    <li class="card__table-item section-desc">
+                                        <span>Сырой протеин</span>
+                                        <span>29%</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>Сырой жир</span>
+                                        <span>18%</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>Неорганическое вещество</span>
+                                        <span>6,5%</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>Влажность</span>
+                                        <span>9%</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>Сырые волокна</span>
+                                        <span>2,5%</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>Кальций</span>
+                                        <span>1,2%</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>Фосфор</span>
+                                        <span>0,2%</span>
+                                    </li>                                    
+                                </ul>
+                            </div>
+                            <div class="card__table-box">
+                                <ul class="card__table-list">
+                                    <span class="card__table__header section-subhead">Аналитический состав</span>
+                                    <li class="card__table-item section-desc">
+                                        <span>Витамин</span>
+                                        <span>18 000 ME</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>Витамин D3</span>
+                                        <span>1 500 МЕ</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>Витамин E</span>
+                                        <span>530 мг</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>Таурин</span>
+                                        <span>1 000 мг</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>L-карнитин</span>
+                                        <span>100 мг</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>Железо</span>
+                                        <span>50 мг</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>Медь</span>
+                                        <span>10 мг</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>Цинк</span>
+                                        <span>60 мг</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>Марганец</span>
+                                        <span>10 мг</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>Йод</span>
+                                        <span>1,5 мг</span>
+                                    </li>
+                                    <li class="card__table-item section-desc">
+                                        <span>Селен</span>
+                                        <span>0,2 мг</span>
+                                    </li>
+                                </ul>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section epilog">
+                <div class="container">
+                    <div class="epilog__wrapper">
+                        <div class="epilog__container">
+                            <h2 class="epilog__header section-header">Prime — правильный выбор для вашего питомца</h2>
+                            <p>
+                                В состав Prime входят только самые лучшие ингредиенты, не содержащие искусственных ароматизаторов, красителей или консервантов.
+                            </p>
+                            <a href="#" class="epilog__link section-btn">О бренде</a>
+                        </div>
+                        <img src="assets/img/epilog-hero..png" alt="">
+                    </div>
+                </div>
+            </section>            
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__container">
+                        <a href="" class="logo"><img src="assets/img/logo..svg" alt=""></a>
+                        <nav class="footer__nav">
+                            <ul class="footer__list">
+                                <li class="footer__item"><a href="#">о бренде</a></li>
+                                <li class="footer__item"><a href="#">каталог</a></li>
+                                <li class="footer__item"><a href="#">где купить</a></li>
+                                <li class="footer__item"><a href="#">контакты</a></li>
+                            </ul>
+                            <div class="footer__socials">
+                                <a href="#vk"><img src="assets/img/vk..svg" alt=""></a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="footer__container">
+                        <span class="copy">© Иванко, 2022</span>
+                        <nav class="footer__nav">
+                            <ul class="footer__list">
+                                <li class="footer__item"><a href="#">Prime</a></li>
+                                <li class="footer__item"><a href="#">Prime Meat</a></li>
+                                <li class="footer__item"><a href="#">Prime Asia</a></li>
+                                <li class="footer__item"><a href="#">Prime Nature</a></li>
+                                <li class="footer__item"><a href="#">Prime WILD</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>                          

@@ -11466,6 +11466,58 @@ $(document).ready(function () {
             $this.addClass('_active');
         }
     });
+
+    // Функция ymaps.ready() будет вызвана, когда
+        // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+        ymaps.ready(init);
+
+        function init() {
+            // Создание карты.
+            var myMap = new ymaps.Map("map", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                // Чтобы не определять координаты центра карты вручную,
+                // воспользуйтесь инструментом Определение координат.
+                center: [60.054433, 30.000461],
+                // Уровень масштабирования. Допустимые значения:
+                // от 0 (весь мир) до 19.
+                zoom: 18
+            });
+
+
+            myMap.behaviors.disable('scrollZoom');
+
+            myMap.controls.remove('geolocationControl'); // удаляем геолокацию
+            myMap.controls.remove('searchControl'); // удаляем поиск
+            myMap.controls.remove('trafficControl'); // удаляем контроль трафика
+            myMap.controls.remove('typeSelector'); // удаляем тип
+            myMap.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+            myMap.controls.remove('zoomControl'); // удаляем контрол зуммирования
+            myMap.controls.remove('rulerControl'); // удаляем контрол правил
+            myMap.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+            // $('.map__zoom-controll._in').on('click', function () {
+            //     myMap.setZoom(myMap.getZoom() + 1);
+            // });
+            // $('.map__zoom-controll._out').on('click', function () {
+            //     myMap.setZoom(myMap.getZoom() - 1);
+            // });
+
+            // let placemark = new ymaps.Placemark(
+            //     [60.054433, 30.000461],
+            //     {
+            //         hintContent: 'Отдел продаж',
+            //     },
+            //     {
+            //         iconLayout: 'default#image',
+            //         iconImageHref: './assets/img/placemark..png',
+            //         iconImageSize: [74, 74],
+            //         iconImageOffset: [-5, -42],
+            //     }
+            // );
+
+            // myMap.geoObjects.add(placemark);
+        }
 });
 })();
 
