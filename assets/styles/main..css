@@ -1622,6 +1622,8 @@ table {
 ._content-inner-img {
   display: block;
   width: 100%; }
+  ._content-inner-img._mob {
+    display: none; }
 
 .footer {
   padding: 40px 0 42px;
