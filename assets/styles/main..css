@@ -944,6 +944,9 @@ table {
     background: #1F3773;
     transition: .3s; }
 
+.title ._content-page .title__slide-hero {
+  max-width: 461px; }
+
 .title .title__wrapper:not(:first-child) {
   margin-top: 91px; }
 
@@ -958,6 +961,8 @@ table {
   flex-direction: column;
   padding-left: 71px;
   box-sizing: border-box; }
+  .title .title__slide._content-page._nature .title__slide-hero {
+    max-width: 65%; }
 
 .title .title__slide-bg {
   position: absolute;
@@ -1686,9 +1691,8 @@ table {
     flex-wrap: wrap;
     gap: 20px; }
   .engr .engr__item {
-    max-width: 180px; }
-  .title .title__slide._content-page {
-    height: 400px; }
+    max-width: 180px;
+    width: 100%; }
   .card .card__list {
     grid-template-columns: 1fr 1fr; }
   .title .title__wrapper:not(:first-child) {
@@ -1778,6 +1782,8 @@ table {
     height: 88px; } }
 
 @media screen and (max-width: 730px) {
+  .title .title__slide._content-page._nature .title__slide-hero {
+    max-width: 100%; }
   .engr .engr__wrapper:last-of-type {
     padding-bottom: 0 !important; }
   .engr .engr__age-list {
@@ -1801,14 +1807,20 @@ table {
   .engr .engr__component-list {
     grid-template-columns: 1fr 1fr;
     gap: 14px; }
-  .title .title__slide._content-page .title__slide-bg {
-    position: static; }
   .title .title__slide._content-page {
     justify-content: start;
-    flex-direction: column-reverse;
-    background: #B7D4F5; }
+    align-items: center;
+    background: #B7D4F5;
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  .title ._content-page .title__slide-hero {
+    margin-top: 20px;
+    max-width: 100%;
+    object-position: center; }
   .title .title__slide._content-page .title__slide-wrap {
-    max-width: 100%; }
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box; }
   .container {
     padding-left: 20px;
     padding-right: 20px; }
@@ -1841,6 +1853,8 @@ table {
     padding: 31px 20px; } }
 
 @media screen and (max-width: 590px) {
+  .catalog .catalog__more {
+    margin-top: 50px; }
   .catalog .catalog__item__list {
     gap: 5px; }
   .catalog .catalog__item__list__item svg {
@@ -1851,8 +1865,12 @@ table {
     height: 25px !important; }
   .catalog .catalog__item__img-box {
     max-height: 135px; }
+    .catalog .catalog__item__img-box img {
+      width: 100%;
+      object-fit: contain; }
   .catalog .catalog__list {
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px; }
   .catalog .catalog__form {
     gap: 9px; }
   .catalog .catalog__form-wrap .ui-selectmenu-button.ui-button {
