@@ -1858,6 +1858,12 @@ table {
     padding: 31px 20px; } }
 
 @media screen and (max-width: 590px) {
+  .engr .engr__item {
+    max-width: unset; }
+  .engr .engr__list {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; }
   .title .title__slide._content-page .title__link {
     max-width: 100%; }
   .epilog .epilog__link {
