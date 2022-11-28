@@ -834,7 +834,12 @@ table {
   font-size: 20px;
   line-height: 23px;
   text-align: center;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  border: 2px solid #1F3773;
+  transition: background .3s, color .3s; }
+  .section-btn:hover {
+    background: #fff;
+    color: #1F3773; }
 
 .slider-dots {
   position: relative; }
@@ -1048,13 +1053,6 @@ table {
       font-weight: 300;
       font-size: 14px;
       line-height: 18px; } }
-
-.advantages .advantages__link {
-  border: 2px solid #1F3773;
-  transition: background .3s, color .3s; }
-  .advantages .advantages__link:hover {
-    background: #fff;
-    color: #1F3773; }
 
 .advantages__item {
   width: 100%;
